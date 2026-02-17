@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register | Exam Portal</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+    <div class="register-container">
+        <div class="register-box">
+            <h2>Create Account</h2>
+
+            <form id="registerForm">
+
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Create password" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm password" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Select Role</label>
+                    <select id="role" required>
+                        <option value="">Choose Role</option>
+                        <option value="student">Student</option>
+                        <option value="admin">Admin</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Register</button>
+
+                <p class="login-link">
+                    Already have an account?
+                    <a href="login.html">Login</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
