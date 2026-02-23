@@ -1,0 +1,38 @@
+online-course-platform/
+│
+├── index.html                # Landing page
+├── login.html
+├── register.html
+│
+├── student/
+│   ├── student-dashboard.html
+│   ├── course.html
+│   ├── exam.html
+│   └── result.html
+│
+├── instructor/
+│   ├── instructor-dashboard.html
+│   ├── create-course.html
+│   └── create-exam.html
+│
+├── admin/
+│   ├── admin-dashboard.html
+│   ├── manage-users.html
+│   └── reports.html
+│
+├── css/
+│   ├── style.css
+│   ├── dashboard.css
+│   └── exam.css
+│
+├── js/
+│   ├── auth.js
+│   ├── student.js
+│   ├── instructor.js
+│   ├── admin.js
+│   ├── exam.js
+│   └── api.js
+│
+└── assets/
+    ├── images/
+    └── icons/

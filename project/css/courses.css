@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: #1e1e2f;
+    padding: 15px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2 {
+    color: #ffffff;
+}
+
+nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #4e9eff;
+}
+
+.page-title {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+.page-title h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.page-title p {
+    color: #666;
+    font-size: 18px;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-section input,
+.filter-section select {
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.filter-section button{
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+    background-color: #4e9eff;
+    color: white;
+}
+.filter-section button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    background-color: #357ae8;
+}
+
+.filter-section input:focus,
+.filter-section select:focus {
+    outline: none;
+    border-color: #4e9eff;
+    box-shadow: 0 0 5px rgba(78, 158, 255, 0.4);
+}
+
+
+.courses-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 40px 80px;
+    flex : 1;
+}
+
+.course-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.course-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15);
+}
+
+.course-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.course-content {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.course-content h3 {
+    margin: 8px 0;
+    font-size: 20px;
+}
+
+.course-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.badge {
+    background: #4e9eff;
+    color: white;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    width: fit-content;
+}
+
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.price {
+    font-weight: bold;
+    color: #28a745;
+}
+
+
+.course-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.course-buttons button {
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+.details-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.details-btn:hover {
+    background: #5a6268;
+}
+
+.wishlist-btn {
+    background: #ff4d6d;
+    color: white;
+}
+
+.wishlist-btn:hover {
+    background: #e63956;
+}
+
+.enroll-btn {
+    background: #4e9eff;
+    color: white;
+}
+
+.enroll-btn:hover {
+    background: #357ae8;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #1e1e2f;
+    color: #aaa;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 992px) {
+    .courses-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+    }
+
+    .courses-container {
+        padding: 20px;
+    }
+}

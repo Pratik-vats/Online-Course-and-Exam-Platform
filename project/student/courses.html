@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Courses | LearnX</title>
+    <link rel="stylesheet" href="/project/css/courses.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>LearnX</h2>
+        </div>
+
+        <nav>
+            <a href="/project/index.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="exams.html">Exams</a>
+            <a href="student-dashboard.html">Dashboard</a>
+            <a href="/project/login.html">Login</a>
+        </nav>
+    </header>
+
+    <section class="page-title">
+        <h1>Explore Courses</h1>
+        <p>Upgrade your skills with industry-ready courses.</p>
+    </section>
+
+    <section class="filter-section">
+        <input type="text" id="searchInput" placeholder="Search courses...">
+
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Web Development">Web Development</option>
+            <option value="Programming">Programming</option>
+            <option value="Data Structures">Data Structures</option>
+        </select>
+        <button>Search</button>
+    </section>
+
+    <section class="courses-container" id="coursesContainer">
+    </section>
+
+    <footer>
+        <p>© 2026 LearnX. All rights reserved.</p>
+    </footer>
+
+    <!-- <script src="js/courses.js"></script> -->
+</body>
+</html>

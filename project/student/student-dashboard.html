@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Dashboard | EduPlatform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/project/css/student-dashboard.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header" class="navbar">
+
+        <div id="brand-logo" class="logo">
+            EduPlatform
+        </div>
+
+        <div id="search-container" class="search-box">
+            <input type="text" id="search-input" placeholder="Search courses...">
+            <i class="fas fa-search"></i>
+        </div>
+
+        <div id="nav-actions" class="nav-right">
+            <div id="notification-icon" class="notification">
+                <i class="fas fa-bell"></i>
+            </div>
+
+            <div id="user-profile" class="profile">
+                <img src="images/user.png" id="profile-image" alt="User Image">
+                <span id="student-name">Pratik</span>
+            </div>
+        </div>
+
+    </header>
+
+    <div id="dashboard-wrapper" class="container">
+
+        <aside id="sidebar" class="sidebar">
+
+            <nav id="sidebar-navigation">
+                <ul class="sidebar-menu">
+
+                    <li class="menu-item active" id="menu-dashboard">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </li>
+
+                    <li class="menu-item" id="menu-courses">
+                        <i class="fas fa-book"></i>
+                        <span>My Courses</span>
+                    </li>
+
+                    <li class="menu-item" id="menu-exams">
+                        <i class="fas fa-file-alt"></i>
+                        <span>Exams</span>
+                    </li>
+
+                    <li class="menu-item" id="menu-results">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Results</span>
+                    </li>
+
+                    <li class="menu-item" id="menu-schedule">
+                        <i class="fas fa-calendar"></i>
+                        <span>Schedule</span>
+                    </li>
+
+                    <li class="menu-item" id="menu-certificates">
+                        <i class="fas fa-certificate"></i>
+                        <span>Certificates</span>
+                    </li>
+
+                    <li class="menu-item" id="menu-settings">
+                        <i class="fas fa-cog"></i>
+                        <span>Settings</span>
+                    </li>
+
+                    <li class="menu-item logout" id="menu-logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        <span>Logout</span>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </aside>
+
+        <main id="main-content" class="main-content">
+
+            <section id="welcome-section" class="welcome">
+                <h2 id="welcome-heading">Welcome back, User</h2>
+                <p id="welcome-subtext">
+                    You have 2 upcoming exams and 3 pending lessons.
+                </p>
+            </section>
+
+            <section id="stats-section" class="stats">
+
+                <div class="stat-card" id="stat-courses">
+                    <h3 class="stat-number">5</h3>
+                    <p class="stat-label">Enrolled Courses</p>
+                </div>
+
+                <div class="stat-card" id="stat-exams">
+                    <h3 class="stat-number">2</h3>
+                    <p class="stat-label">Upcoming Exams</p>
+                </div>
+
+                <div class="stat-card" id="stat-average">
+                    <h3 class="stat-number">82%</h3>
+                    <p class="stat-label">Average Score</p>
+                </div>
+
+                <div class="stat-card" id="stat-completed">
+                    <h3 class="stat-number">3</h3>
+                    <p class="stat-label">Completed Courses</p>
+                </div>
+
+            </section>
+
+            <section id="courses-section" class="courses">
+
+                <h2 class="section-title">My Courses</h2>
+
+                <div class="course-card" id="course-dsa">
+                    <img src="images/dsa.jpg" alt="DSA Course" class="course-thumbnail">
+
+                    <div class="course-info">
+                        <h3 class="course-title">Data Structures in C++</h3>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%;"></div>
+                        </div>
+
+                        <button class="btn btn-primary continue-btn">
+                            Continue
+                        </button>
+                    </div>
+                </div>
+
+                <div class="course-card" id="course-dbms">
+                    <img src="images/dbms.jpg" alt="DBMS Course" class="course-thumbnail">
+
+                    <div class="course-info">
+                        <h3 class="course-title">Database Management System</h3>
+
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%;"></div>
+                        </div>
+
+                        <button class="btn btn-primary continue-btn">
+                            Continue
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="exams-section" class="exams">
+
+                <h2 class="section-title">Upcoming Exams</h2>
+
+                <div class="exam-card" id="exam-dsa-mid">
+                    <h3 class="exam-title">Data Structures Mid-Term</h3>
+                    <p class="exam-date">Date: 20 Feb 2026</p>
+                    <p class="exam-duration">Duration: 60 Minutes</p>
+
+                    <button class="btn btn-success start-exam-btn">
+                        Start Exam
+                    </button>
+                </div>
+
+                <div class="exam-card" id="exam-dbms-quiz">
+                    <h3 class="exam-title">DBMS Quiz 1</h3>
+                    <p class="exam-date">Date: 25 Feb 2026</p>
+                    <p class="exam-duration">Duration: 30 Minutes</p>
+
+                    <button class="btn btn-success start-exam-btn">
+                        Start Exam
+                    </button>
+                </div>
+
+            </section>
+
+            <section id="results-section" class="results">
+
+                <h2 class="section-title">Recent Results</h2>
+
+                <table id="results-table" class="results-table">
+                    <thead>
+                        <tr>
+                            <th>Exam</th>
+                            <th>Marks</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>DSA Mock Test</td>
+                            <td>85/100</td>
+                            <td class="status-pass">Pass</td>
+                            <td>
+                                <button class="btn btn-secondary view-result-btn">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>DBMS Quiz</td>
+                            <td>38/50</td>
+                            <td class="status-pass">Pass</td>
+                            <td>
+                                <button class="btn btn-secondary view-result-btn">
+                                    View
+                                </button>
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+            </section>
+
+            <section id="announcements-section" class="announcements">
+
+                <h2 class="section-title">Announcements</h2>
+
+                <ul class="announcement-list">
+                    <li class="announcement-item">
+                        1. New AI Course Added
+                    </li>
+                    <li class="announcement-item">
+                        2. Server Maintenance on 22 Feb
+                    </li>
+                    <li class="announcement-item">
+                        3. Certificate generation system updated
+                    </li>
+                </ul>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- <script src="js/student-dashboard.js"></script> -->
+
+</body>
+</html>
