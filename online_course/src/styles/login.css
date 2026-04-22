@@ -1,0 +1,47 @@
+.login-container, .register-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 200px);
+}
+
+.login-box, .register-box {
+    width: 100%;
+    max-width: 440px;
+    background-color: var(--surface-color);
+    padding: 3rem;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    border: 1px solid var(--border-color);
+}
+
+.login-box h2, .register-box h2 {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.login-box form, .register-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box button, .register-box button {
+    margin-top: 1.5rem;
+    width: 100%;
+    padding: 0.875rem;
+    font-size: 1.05rem;
+}
+
+.auth-redirect {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+.auth-redirect a {
+    font-weight: 600;
+}

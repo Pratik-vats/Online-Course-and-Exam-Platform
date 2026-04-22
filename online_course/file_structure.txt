@@ -1,0 +1,43 @@
+src/
+│
+├── assets/                # images, icons
+│
+├── components/            # reusable UI
+│   ├── Navbar.jsx
+│   ├── Footer.jsx
+│   ├── InputField.jsx
+│   ├── CourseCard.jsx
+│   ├── ExamQuestion.jsx
+│   ├── ProtectedRoute.jsx
+│
+├── pages/                 # main screens
+│   ├── Home.jsx
+│   ├── Login.jsx
+│   ├── Register.jsx
+│   ├── Courses.jsx
+│   ├── Exam.jsx
+│   ├── Dashboard.jsx
+│   ├── Result.jsx
+│
+├── utils/                 # logic (VERY IMPORTANT)
+│   ├── auth.js
+│   ├── storage.js
+|   |-- api.js
+│
+├── hooks/                 # custom hooks
+│   ├── useAuth.js
+|   |-- useAuthContext
+│
+├── context/               # global state
+│   ├── AuthContext.jsx
+│
+├── styles/                # css files
+│   ├── register.css
+│   ├── login.css
+│   ├── courses.css
+│   ├── exam.css
+│   ├── dashboard.css
+|   |-- global.css
+│
+├── App.jsx
+└── main.jsx
